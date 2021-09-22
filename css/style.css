@@ -1,0 +1,156 @@
+/* ////////////////////////////////
+common css
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@font-face {
+    font-family: "Bebas";
+    src: url(../fonts/Bebas.ttf);
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans.ttf);
+}
+
+body{
+    background-image: url('../image/bg_img1.png');
+    background-position: 0 0;
+    background-repeat: repeat;
+    min-height: 5500px;
+    font-family: "Bebas", sans-serif;
+}
+p{
+    font-family: "OpenSans", sans-serif;
+}
+.secondary_color{
+    color: #393939;
+}
+.primary_color{
+    color: #ea2e49 !important;
+}
+.bg_primary_color{
+    background-color: #ea2e49 !important;
+}
+.clr{
+    clear: both;
+}
+.card_text_background_color{
+    background-color: #efeff8;
+}
+
+
+/* ////////////////////////////////
+common css
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* navbar css start  */
+.navbar-light .navbar-nav .nav-link {
+    color: #313131;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ea2e49;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #ea2e49;
+}
+.ocation_menu_button{
+    background-color: #ea2e49;
+    color: #ffffff !important;
+}
+
+/* navbar css end  */
+
+/* latest product item css start  */
+.lp-item .card a{
+    position: relative;
+}
+.lp-item .card:hover .card_overlay{
+    opacity: 1;
+    height: 100%;
+    transition: 0.4s;
+}
+.lp-item .card_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000063;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    transition: 0.4s;
+}
+.lp-item .card_overlay .overlay_link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lp-item .card_overlay a i{
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: inline-block;
+}
+.lp-item .card_overlay a:hover i{
+    color: #ea2e4ad5;
+    transition: all linear 0.4s;
+}
+/* latest product item css end  */
+
+/* about css start  */
+.about .h2{
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+.about p{
+    font-size: 14px;
+}
+.about p .text-danger{
+    font-weight: 700;
+}
+/* about css end  */
+
+/* event css start  */
+.ne_block a{
+    border: 1px solid #cccccc;
+    text-decoration: none;
+}
+.ne_block a:hover{
+    background-color: #f4f4f4;
+}
+.ne_block a:hover p{
+    color: #ea2e49 !important;
+}
+.ne_block a p{
+    font-size: 14px;
+}
+/* event css end  */
+
+/* footer top css start  */
+.footer_top_outer{
+    background-color: #000000b4;
+    color: #ffffff;
+}
+.footer_top p a,.footer_top p{
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.footer_top p a:hover{
+    color: #538fff;
+}
+/* footer top css end  */
+
+/* footer css start  */
+.footer_outer{
+    background-color: #ea2e49;
+}
+/* footer css end  */
+
+
+
+
+
