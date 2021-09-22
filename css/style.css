@@ -1,6 +1,6 @@
 /* ////////////////////////////////
 common css
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */ 
 @font-face {
     font-family: "Bebas";
     src: url(../fonts/Bebas.ttf);
@@ -14,7 +14,6 @@ body{
     background-image: url('../image/bg_img1.png');
     background-position: 0 0;
     background-repeat: repeat;
-    min-height: 5500px;
     font-family: "Bebas", sans-serif;
 }
 p{
