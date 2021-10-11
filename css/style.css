@@ -51,10 +51,22 @@ ol {
 .card_text_background_color {
     background-color: #efeff8;
 }
+.overlay_bg_color{
+    background-color: #00000087;
+}
+
+
+.bordertop{
+    height: 2px;
+    background-color: #f2f2f2;
+}
+
 
 /* ////////////////////////////////
 common css
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
 
 /* ////////////////////////////////
 Index part start
@@ -203,13 +215,12 @@ Index part start
     font-size: 70px;
     color: #ffffff;
 }
-.f_video_img_overlay .v_content {
+.v_content {
     position: absolute;
     bottom: 5%;
     left: 5%;
     color: #ffffff;
     font-family: "Bebas", sans-serif;
-    font-size: 36px;
     text-transform: uppercase;
     line-height: 1.2;
 }
@@ -338,33 +349,32 @@ Index part end
 Mens part start
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-/* mens banner css start  */
-.mens_banner_img {
+/* page banner css start  */
+.page_banner_img {
     position: relative;
 }
-.mens_banner_content {
+.page_banner_content {
     position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-30%, -50%);
 }
-.mens_banner_content .h1 {
-    font-size: 45px;
+.page_banner_content .h1 {
     font-weight: 400;
     color: #ffffff;
     text-shadow: 0 0 5px #000000;
 }
-.mens_breadcrumb {
+.page_breadcrumb {
     background-color: #333745;
 }
-.mens_breadcrumb ol li a {
+.page_breadcrumb ol li a {
     font-family: "Bebas", sans-serif;
     font-size: 12;
     color: #ffffff;
     line-height: 0;
 }
 
-/* mens banner css end  */
+/* page banner css end  */
 
 /* mens product css start  */
 .category_list_part{}
@@ -401,23 +411,75 @@ Mens part start
 /* mens product css end  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-.bordertop{
-    height: 2px;
-    background-color: #f2f2f2;
-}
-
-
 /* ////////////////////////////////
 Mens part end
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+/* ////////////////////////////////
+about css part start
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.ao_content{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    letter-spacing: 4px;
+    line-height: 1.4;
+    color: #ffffff;
+    font-weight: 300;
+}
+.ao_content span{
+    padding-left: 2.5vw;
+    background-color: #0000005d;
+}
+.ao_content span:nth-child(1){
+    padding-right: 2.5vvw;
+}
+.ao_content span:nth-child(3){
+    padding-right: 6.5vw;
+}
+.ao_content span:nth-child(5){
+    padding-right: 10.5vw;
+}
+
+/* ////////////////////////////////
+about css part end
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+/* ////////////////////////////////
+about css part start
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+/* ////////////////////////////////
+about css part end
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

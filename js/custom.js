@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     // banner slide js start
     $(".banner_slide").owlCarousel({
@@ -22,4 +21,37 @@ $(document).ready(function () {
         spinColor: "#ab6db0",
     });
     // video light box js end
+    
+    // boishakhi collection js start 
+    $("#womens_products").addClass('d-none');
+    $("#kids_products").addClass('d-none');
+    $("#mens").addClass('active');
+    $("#mens").click( function () {
+        $(this).addClass('active');
+        $("#kids").removeClass('active');
+        $("#kids_products").addClass('d-none');
+        $("#womens").removeClass('active');
+        $("#womens_products").addClass('d-none');
+        $("#mens_products").removeClass('d-none');
+    });
+    $("#womens").click( function () {
+        $(this).addClass('active');
+        $("#kids").removeClass('active');
+        $("#kids_products").addClass('d-none');
+        $("#mens").removeClass('active');
+        $("#mens_products").addClass('d-none');
+        $("#womens_products").removeClass('d-none');
+    });
+    $("#kids").click( function () {
+        $(this).addClass('active');
+        $("#kids_products").removeClass('d-none');
+        $("#mens").removeClass('active');
+        $("#mens_products").addClass('d-none');
+        $("#womens").removeClass('active');
+        $("#womens_products").addClass('d-none');
+    });
+    
+       
+    // boishakhi collection js end
+
 });
