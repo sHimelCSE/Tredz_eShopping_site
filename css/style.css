@@ -1,6 +1,6 @@
 /* ////////////////////////////////
 common css
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */ 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 @font-face {
     font-family: "Bebas";
     src: url(../fonts/Bebas.ttf);
@@ -10,34 +10,54 @@ common css
     src: url(../fonts/OpenSans.ttf);
 }
 
-body{
-    background-image: url('../image/bg_img1.png');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    background-image: url("../image/bg_img1.png");
     background-position: 0 0;
     background-repeat: repeat;
     font-family: "Bebas", sans-serif;
+    transition: all linear 0.4s;
 }
-p{
+
+p {
     font-family: "OpenSans", sans-serif;
 }
-.secondary_color{
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+ul,
+ol {
+    list-style: none;
+}
+.secondary_color {
     color: #393939;
 }
-.primary_color{
+.primary_color {
     color: #ea2e49 !important;
 }
-.bg_primary_color{
+.bg_primary_color {
     background-color: #ea2e49 !important;
 }
-.clr{
+.clr {
     clear: both;
 }
-.card_text_background_color{
+.card_text_background_color {
     background-color: #efeff8;
 }
 
-
 /* ////////////////////////////////
 common css
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* ////////////////////////////////
+Index part start
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 /* navbar css start  */
@@ -46,31 +66,87 @@ common css
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
-    
 }
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
     color: #ea2e49;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #ea2e49;
 }
-.ocation_menu_button{
+.ocation_menu_button {
     background-color: #ea2e49;
     color: #ffffff !important;
 }
 
 /* navbar css end  */
 
-/* latest product item css start  */
-.lp-item .card a{
+/* banner css start  */
+.banner_slide {
     position: relative;
 }
-.lp-item .card:hover .card_overlay{
+.owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 7%;
+    text-align: center !important;
+    transition: all linear 0.4s;
+}
+.prev_arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 40px;
+}
+.owl-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 7%;
+    text-align: center !important;
+    transition: all linear 0.4s;
+}
+.next_arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 40px;
+    transition: all linear 0.4s;
+}
+.owl-next:hover,
+.owl-prev:hover {
+    background-color: #ffffff87 !important;
+    transition: all linear 0.4s;
+}
+.owl-next:hover .next_arrow,
+.owl-prev:hover .prev_arrow {
+    color: #0d4e39;
+    transition: all linear 0.4s;
+}
+/* banner css end  */
+
+/* latest product item css start  */
+.lp-item .card a {
+    position: relative;
+}
+.lp-item span img {
+    width: 13px !important;
+    height: 19px;
+}
+.lp-item .card:hover .card_overlay {
     opacity: 1;
     height: 100%;
     transition: 0.4s;
 }
-.lp-item .card_overlay{
+.lp-item .card_overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -80,76 +156,268 @@ common css
     opacity: 0;
     transition: 0.4s;
 }
-.lp-item .card_overlay .overlay_link{
+.lp-item .card_overlay .overlay_link {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.lp-item .card_overlay a i{
+.lp-item .card_overlay a i {
     padding: 5px;
     border: 2px solid #ffffff;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
     display: inline-block;
 }
-.lp-item .card_overlay a:hover i{
+.lp-item .card_overlay a:hover i {
     color: #ea2e4ad5;
     transition: all linear 0.4s;
 }
 /* latest product item css end  */
 
+/* feature css start  */
+/* .feature_outer {
+}
+.feature {
+} */
+.f_video_img {
+    position: relative;
+}
+.f_video_img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000087;
+    transform: scale(0);
+    transition: all linear 0.4s;
+}
+.f_video_img_overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.f_video_img_overlay a i {
+    font-size: 70px;
+    color: #ffffff;
+}
+.f_video_img_overlay .v_content {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: #ffffff;
+    font-family: "Bebas", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.f_video_img:hover .f_video_img_overlay {
+    transform: scale(1);
+    transition: all linear 0.4s;
+}
+/* feature css end  */
+
 /* about css start  */
-.about .h2{
+.about .h2 {
     line-height: 1.5;
     letter-spacing: 5px;
 }
-.about p{
+.about p {
     font-size: 14px;
 }
-.about p .text-danger{
+.about p .text-danger {
     font-weight: 700;
 }
 /* about css end  */
 
 /* event css start  */
-.ne_block a{
+.ne_block a {
     border: 1px solid #cccccc;
     text-decoration: none;
+    overflow: hidden;
 }
-.ne_block a:hover{
+.ne_block a:hover {
     background-color: #f4f4f4;
 }
-.ne_block a:hover p{
+.ne_block a:hover p {
     color: #ea2e49 !important;
 }
-.ne_block a p{
+.ne_block a p {
     font-size: 14px;
+}
+.ne_block a img {
+    width: 72px !important;
+    height: 68px;
 }
 /* event css end  */
 
 /* footer top css start  */
-.footer_top_outer{
+.footer_top_outer {
     background-color: #000000b4;
     color: #ffffff;
 }
-.footer_top p a,.footer_top p{
+.footer_top p a,
+.footer_top p {
     color: #ffffff;
     font-size: 12px;
     text-transform: capitalize;
 }
-.footer_top p a:hover{
+.footer_top p a:hover {
     color: #538fff;
 }
 /* footer top css end  */
 
 /* footer css start  */
-.footer_outer{
+.footer_outer {
     background-color: #ea2e49;
 }
 /* footer css end  */
 
+/* /////////////////////////// */
+/* fixed right social css start  */
+.fixed_social {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 99;
+}
+.fixed_social ul li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #00000087;
+    transition: all linear 0.4s;
+}
+.fixed_social ul li a {
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.fixed_social ul li:hover {
+    background-color: #ea2e49;
+    transition: all linear 0.4s;
+}
+/* fixed right social css end  */
+
+/* top sortcart css start  */
+.sortcart_top {
+    position: fixed;
+    bottom: 15px;
+    right: 6px;
+    z-index: 999;
+}
+.sortcart_top ul li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #00000087;
+    transition: all linear 0.4s;
+}
+.sortcart_top ul li a {
+    display: block;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.sortcart_top ul li:hover {
+    background-color: #ea2e49;
+    transition: all linear 0.4s;
+}
+/* top sortcart css end  */
+
+/* ////////////////////////////////
+Index part end
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* ////////////////////////////////
+Mens part start
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* mens banner css start  */
+.mens_banner_img {
+    position: relative;
+}
+.mens_banner_content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+.mens_banner_content .h1 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+}
+.mens_breadcrumb {
+    background-color: #333745;
+}
+.mens_breadcrumb ol li a {
+    font-family: "Bebas", sans-serif;
+    font-size: 12;
+    color: #ffffff;
+    line-height: 0;
+}
+
+/* mens banner css end  */
+
+/* mens product css start  */
+.category_list_part{}
+.category_list{}
+.category_list ul li:first-child{
+    padding: 14px 14px;
+    background-color: #ea2e49;
+    margin-bottom: 17px;
+    color: #ffffff;
+}
+.category_list ul{
+    min-height: 400px;
+    padding-bottom: 50px;
+    background-color: #efeff8;
+}
+.category_list ul li{
+}
+.category_list ul li a{
+    padding: 6px 14px;
+    display: block;
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #3a3a3a;
+}
+.category_list ul li:first-child:hover{
+    background-color: #ea2e49;
+}
+.category_list ul li a.active,
+.category_list ul li:hover a{
+    background-color: #ffffff;
+    color: #ea2e49;
+}
+/* mens product css end  */
 
 
 
 
+
+
+
+
+
+
+
+
+
+.bordertop{
+    height: 2px;
+    background-color: #f2f2f2;
+}
+
+
+/* ////////////////////////////////
+Mens part end
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

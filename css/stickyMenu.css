@@ -1,0 +1,12 @@
+.navbar-fixed {
+    position: fixed;
+    top: -46px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: #fff;
+    padding: 5px 0;
+    width: 100%;
+    box-shadow: 0 10px 20px #00000098;
+  }
+  
